@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+    text-decoration: none;
+}
+.welcome{
+    position: absolute;
+    background: url(../img/bannerBg.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+.layer{
+    background-image: url(../img/canada1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+.logo{
+    position: absolute;
+    top: 0;
+}
+
+
+@keyframes typing {
+    from { width: 0;
+        white-space: nowrap;
+    }
+    
+    to { width: 100%;
+        white-space: nowrap; }
+  }
+
+  .typing-text {
+   
+    font-family: cursive;
+    font-weight: bold;
+   padding: 1rem;
+   font-size: 2rem;
+    position: absolute;
+    color: white;
+    overflow: hidden;
+    top: 25%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    border-right: 2px solid #000;
+    animation: typing 10s 1;
+  }
+  
+
+  #company-details {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+#buttons-container {
+    color: white;
+    position: absolute;
+    top: 45%;
+    right: 0;
+    left: 0;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.switch-button {
+    
+    box-shadow: 4px 7px 2px 1px #493131;
+    font-weight: bold;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+.switch-button:hover{
+    scale: 1.1;
+}
+.contact{
+    display: flex;
+    position: absolute;
+    right: 0%;
+    bottom: 5%;
+}
+.contact>div{
+    cursor: pointer;
+    margin: 0 2rem;
+    border: 1px solid gray;
+    padding: 0.5rem;
+    display: inline-flex;
+    align-items: center;
+
+}
+.contact svg{
+    margin: 0 5px;
+}
+
+.contactDetalis{
+    display: none;
+}
+.contact>div:hover .contactDetalis{
+    display: block;
+    animation: contact 3s linear 1;
+}
+@keyframes contact {
+ from{
+    margin-right: 1rem;
+ }
+ to{
+    margin-right: 0;
+ }
+}
