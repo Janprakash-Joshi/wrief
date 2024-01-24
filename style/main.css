@@ -124,3 +124,15 @@
     margin-right: 0;
  }
 }
+@media (max-width: 450px ){
+    .logo img{
+        width: 100%;
+    }
+    .typing-text{
+        top: 18%;
+    }
+    .contact{
+        bottom: 5px;
+        flex-wrap: wrap;
+    }
+}
